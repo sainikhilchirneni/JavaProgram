@@ -1,18 +1,18 @@
 public class Convert{
 	
 	public static void main(String[] args) {
-		toUpperCase("Sai Nikhil");
+		ConvertToUpperCase("Sai Nikhil");
 	}
-	public static void toUpperCase(String str){
-    		String s = "";
+	public static void ConvertToUpperCase(String str){
+    		String result = "";
     		for(int i=0 ; i<str.length();i++){
-		if(Character.isAlphabetic(str.charAt(i))&&Character.isLowerCase(str.charAt(i))){
-			s += (char)(str.charAt(i)-32);
+		if(Character.isAlphabetic(str.charAt(i)) && Character.isLowerCase(str.charAt(i))){
+			result += (char)(str.charAt(i)-32);
         	}else{
-        		s += (char)str.charAt(i);
+        		result += (char)str.charAt(i);
         	}
         }
-        System.out.println(s);
+        System.out.println(result);
         }
 
 }
